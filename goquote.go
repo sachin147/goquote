@@ -8,24 +8,6 @@ import (
         "encoding/json"
 )
 
-type Provider struct {
-	Name string `json:"name"`
-	Id int `json:"id"`
-}
-
-type WordExample struct {
-	Year int `json:"year"`
-	Provider Provider 'json:"year"`
-	Url string `json:"url"`
-	Word string `json:"word"`
-        Text string `json:"text"`
-	Title string `json:"title"`
-	DocumentId int `json:"documentId"`
-	ExampleId int `json:"exampleId"`
-	Rating long 'json:"rating"`
-        
-}
-
 type Quote struct {
     Quote string `json:"quote"`
     Author string `json:"author"`
